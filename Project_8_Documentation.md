@@ -4,6 +4,7 @@ ____
 ### **Configure Apache As A Load Balancer**
 ___
 >#### Launch 1 EC2 instance with Ubuntu 20.04 Operating System nd name it Project-8-apache-lb  Open TCP port 80 
+
 ![ec2](./Project_8_Images/ec2.PNG)
 >#### Install Apache Load Balancer on Project-8-apache-lb server using the below commands;
 ##### *Install apache2:*
@@ -20,6 +21,7 @@ ___
 ##### *Check Status of apache2 service:
 * *`sudo systemctl restart apache2`*
 * *`sudo systemctl status apache2`*
+
 ![Apache](./Project_8_Images/aptupdate.PNG)
 ![Aoache](./Project_8_Images/apache.PNG)
 >#### Configure Load Balancing
@@ -34,6 +36,7 @@ http://172.31.7.195:80 Web Server 2
 
 >#### Accessing the Web Server
 To verify that our configuration on the LB works I access the LB from a browswer using its Public IP or Public DNS name; http://13.42.12.19/index.php
+
 ![Page](./Project_8_Images/page.PNG)
 ![Page](./Project_8_Images/page1.PNG)
 >#### Ensuring each Web Server has its own logs Directory
